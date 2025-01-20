@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Houssam Tabbara</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">HT</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-section">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-section">
+                    <div class="profile-intro">
+                        <h3><i class="fas fa-user-circle"></i> Professional Summary</h3>
+                        <p>Highly skilled and motivated Information Technology Management professional with a Minor in Data Analytics  from the Lebanese American University. Adept at leveraging a broad range of technical expertise, including ERP SAP, SQL, IBM SPSS, cybersecurity, and machine learning tools, to drive innovation and optimize organizational processes. Experienced in IT system engineering, technical support, and network troubleshooting, with hands-on experience from internships at Middle East Airlines and LAU.</p>
+                    </div>
+
+                    <div class="credentials">
+                        <h3><i class="fas fa-graduation-cap"></i> Academic Credentials</h3>
+                        <div class="credential-item">
+                            <h4 style="color: rgb(8,188,148);" >
+                                Lebanese American University, Beirut, Lebanon </h4>
+                            <p class="degree">- Bachelor of Science in Information Technology Management </p>
+                            <p class="minor">- Minor: Data Analytics</p>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4 style="color: rgb(8,188,148);" >
+                                    Programming & Development</h4>
+                                <div class="skills-list">
+                                    <div class="skill-item">
+                                        <span>Python</span>
+                                        <div class="skill-level expert"></div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span>Visual Basic</span>
+                                        <div class="skill-level advanced"></div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span>SQL</span>
+                                        <div class="skill-level expert"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4 style="color: rgb(8,188,148);" >
+                                    Data Analytics & Tools</h4>
+                                <div class="skills-list">
+                                    <div class="skill-item">
+                                        <span>Tableau</span>
+                                        <div class="skill-level expert"></div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span>IBM SPSS</span>
+                                        <div class="skill-level advanced"></div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span>ERP SAP System</span>
+                                        <div class="skill-level advanced"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4 style="color: rgb(8,188,148);" >
+                                    Design & Web Technologies
+                                </h4>
+                                <div class="skills-list">
+                                    <div class="skill-item">
+                                        <span>Adobe XD</span>
+                                        <div class="skill-level advanced"></div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span>Adobe InDesign</span>
+                                        <div class="skill-level advanced"></div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span>Adobe Dreamweaver</span>
+                                        <div class="skill-level advanced"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="languages">
+                        <h3><i class="fas fa-language"></i> Language Proficiency</h3>
+                        <div class="language-list">
+                            <span class="language-item">Arabic</span>
+                            <span class="language-item">English</span>
+                            <span class="language-item">French</span>
+                        </div>
+                    </div>
+
+                    <div class="professional-approach">
+                        <h3><i class="fas fa-lightbulb"></i> Professional Approach</h3>
+                        <p>Committed to leveraging cutting-edge technology and data-driven insights to optimize business processes and drive innovation. Focus on delivering scalable solutions that address complex business challenges while ensuring optimal system performance and security.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Contact Me</h3>
+            <div class="email-container">
+                <input type="text" id="emailInput" value="houssam.tabbara01@gmail.com" readonly>
+                <button id="copyButton" onclick="copyEmail()">
+                    <i class="far fa-copy"></i> Copy Email
+                </button>
+            </div>
+            <div id="copyMessage" class="copy-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:Houssam.tabbara01@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 Houssam Tabbara. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
