@@ -3,14 +3,8 @@ const modal = document.getElementById("contactModal");
 const contactButtons = document.querySelectorAll(".cta-button.secondary");
 const span = document.getElementsByClassName("close")[0];
 
-// Open modal when contact button is clicked
-contactButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        modal.style.display = "block";
-    });
-});
 
+//updated
 // Close modal when clicking the X
 span.onclick = function() {
     modal.style.display = "none";
