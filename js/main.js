@@ -4,7 +4,7 @@ const contactButtons = document.querySelectorAll(".cta-button.secondary");
 const span = document.getElementsByClassName("close")[0];
 
 
-//updated
+//update
 // Close modal when clicking the X
 span.onclick = function() {
     modal.style.display = "none";
